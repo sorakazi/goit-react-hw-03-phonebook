@@ -1,0 +1,11 @@
+.contact-list {
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 2px hsla(48, 52%, 94%, .7);
+    display: flex;
+    font-size: 20px;
+    width: 550px;
+    padding: 15px;
+    color: #090606;
+  }

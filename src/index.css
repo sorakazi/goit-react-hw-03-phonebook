@@ -7,9 +7,101 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#606870, #090606) no-repeat fixed;
+  margin: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2 {
+  color: #f6f6f6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  gap: 25px;
+}
+
+
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #2087e8;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 1px rgba(222, 210, 210, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #003bfd;
+  box-shadow: 1px 1px 5px 1px rgba(245, 230, 230, 1);
+  transform: translateY(-2px);
+  border-color: #f6f6f6;
+}
+
+button:active {
+  background-color: #2d57a6;
+  box-shadow: 0 1px 5px 1px rgba(255, 252, 252, 1);
+  transform: translateY(0);
+}
+
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.377);
+}
+
+input:focus {
+  border-color: #3420e8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.phonebook-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.phonebook-container  div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
